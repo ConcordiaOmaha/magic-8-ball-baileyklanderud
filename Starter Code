@@ -1,3 +1,4 @@
+  
 //------------- Magic 8 ball starter Code ----------------
 
 #include <iostream>
@@ -16,10 +17,10 @@ int main()
     //based on the input reply to the user. 
     if (userResponse == 1) 
     {
-        std::cout << "We hope you feel better tomorrow... "; 
+    std::cout << "We hope you feel better tomorrow... "; 
     } else
     {
-        std::cout << "It could be worse... "; 
+    std::cout << "It could be worse... "; 
     }
 
     //create a secondary reply that is completely random. 
@@ -27,9 +28,9 @@ int main()
     
     if (randNum > 60)
     {
-        std::cout << "better luck next time"; 
+    std::cout << "better luck next time"; 
     } else 
     {
-        std::cout << "Life must pretty good for you.";
+    std::cout << "Life must pretty good for you.";
     }
 }

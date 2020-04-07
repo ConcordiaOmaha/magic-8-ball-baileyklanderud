@@ -15,10 +15,21 @@ int main()
     std::cin >> userResponse;
     
     //based on the input reply to the user. 
-    if (userResponse == 1) 
+    if (userResponse == 1) //only if response is exactly 1
     {
-    std::cout << "We hope you feel better tomorrow... "; 
-    } else
+    std::cout << "We hope you feel better tomorrow...\n "; 
+    } else if (userResponse == 2)
+    {
+    std::cout << "Hope things are going well...\n";
+    } else if (userResponse == 5)
+    {
+    std::cout << "Good for you!\n";
+    }
+    else if (userResponse == 7)
+    {
+    std::cout << "Be Happy\n";    
+    }
+    else
     {
     std::cout << "It could be worse... "; 
     }

@@ -6,6 +6,7 @@
 int main () 
     
 { 
+    srand(time(0));
     // variable declarations
     int userResponse; 
     
@@ -29,10 +30,12 @@ int main ()
     } else if (userResponse == 5)
     {
     std::cout << "Good for you!\n";
-    }
-    else if (userResponse == 7)
+    }else if (userResponse == 7)
     {
     std::cout << "Be Happy\n";    
+    } else if(userResponse != 9)
+    {
+    std::cout << "Oh NO\n";
     }
     else 
     {
@@ -45,13 +48,16 @@ int main ()
     if (randNum > 60)
     {
     std::cout << "Better luck next time"; 
-    } else if (randNum < 61 )
+    } else if (randNum < 60 )
     {
     std::cout << "Way to go";
-    } else if (randNum == 80)
+    } else if (randNum == 50)
     {
     std::cout << "You got this";
-    }else 
+    } else if (randNum != 10)
+    {
+    std::cout << "Keep it up";
+    } else
     {
     std::cout << "Life must pretty good for you.";
     }

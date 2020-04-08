@@ -3,8 +3,9 @@
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main () 
+    
+{ 
     // variable declarations
     int userResponse; 
     
@@ -18,11 +19,11 @@ int main()
     {
     std::cout << "We hope you feel better tomorrow...\n "; 
     }
-    if (userResponse > 10)
+    if (userResponse > 10) 
     {
     std::cout << "ERROR\n";    
     }
-    else if (userResponse == 2)
+    else if (userResponse < 5)
     {
     std::cout << "Hope things are going well...\n";
     } else if (userResponse == 5)
@@ -33,7 +34,7 @@ int main()
     {
     std::cout << "Be Happy\n";    
     }
-    else
+    else 
     {
     std::cout << "It could be worse!\n "; 
     }
@@ -41,10 +42,10 @@ int main()
     //create a secondary reply that is completely random. 
     int randNum = rand() % 100;         // adding %100 keeps the random number between 0 and 99. 
     
-    if (randNum  60)
+    if (randNum > 60)
     {
     std::cout << "Better luck next time"; 
-    } else if (randNum < 70)
+    } else if (randNum > 70)
     {
     std::cout << "Way to go";
     } else if (randNum == 80)

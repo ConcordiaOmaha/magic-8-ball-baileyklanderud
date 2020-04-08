@@ -1,5 +1,4 @@
-  
-//------------- Magic 8 ball starter Code ----------------
+ //------------- Magic 8 ball starter Code ----------------
 
 #include <iostream>
 #include <string>
@@ -18,7 +17,12 @@ int main()
     if (userResponse == 1) //only if response is exactly 1
     {
     std::cout << "We hope you feel better tomorrow...\n "; 
-    } else if (userResponse == 2)
+    }
+    if (userResponse > 10)
+    {
+    std::cout << "ERROR\n";    
+    }
+    else if (userResponse == 2)
     {
     std::cout << "Hope things are going well...\n";
     } else if (userResponse == 5)
@@ -33,16 +37,20 @@ int main()
     {
     std::cout << "It could be worse!\n "; 
     }
-
+ 
     //create a secondary reply that is completely random. 
     int randNum = rand() % 100;         // adding %100 keeps the random number between 0 and 99. 
     
-    if (randNum > 60)
+    if (randNum  60)
     {
-    std::cout << "better luck next time"; 
-    } else if (randNum > 70)
+    std::cout << "Better luck next time"; 
+    } else if (randNum < 70)
+    {
     std::cout << "Way to go";
-    else 
+    } else if (randNum == 80)
+    {
+    std::cout << "You got this";
+    }else 
     {
     std::cout << "Life must pretty good for you.";
     }

@@ -45,7 +45,7 @@ int main ()
     if (randNum > 60)
     {
     std::cout << "Better luck next time"; 
-    } else if (randNum > 70)
+    } else if (randNum < 61 )
     {
     std::cout << "Way to go";
     } else if (randNum == 80)
